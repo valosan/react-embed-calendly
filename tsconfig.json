@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationDir": "dist",
+    "emitDeclarationOnly": true,
+    "moduleResolution": "node",
+    "target": "es6",
+    "jsx": "react"
+  },
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "react-embed-calendly",
+  "version": "0.1.0",
+  "description": "Embed Calendly widget in your React app",
+  "main": "request.js",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huksley/prometheus-remote-write.git"
+  },
+  "bugs": "https://github.com/huksley/prometheus-remote-write/issues",
+  "homepage": "https://github.com/huksley/prometheus-remote-write",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "esbuild index.tsx  --format=esm --out-extension:.js=.mjs --outdir=dist --sourcemap --bundle --minify && esbuild index.tsx --format=cjs --outdir=dist --sourcemap --bundle --minify && tsc --emitDeclarationOnly --declaration --project tsconfig.json"
+  },
+  "author": "Ruslan Gainutdinov",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "calendly",
+    "embed",
+    "widget"
+  ],
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "node-fetch": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "esbuild": "^0.16.17",
+    "typescript": "^4.9.4"
+  }
+}
