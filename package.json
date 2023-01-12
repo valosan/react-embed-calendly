@@ -1,16 +1,16 @@
 {
   "name": "react-embed-calendly",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Embed Calendly widget in your React app",
   "main": "request.js",
   "type": "module",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/huksley/prometheus-remote-write.git"
+    "url": "git+https://github.com/huksley/react-embed-calendly.git"
   },
-  "bugs": "https://github.com/huksley/prometheus-remote-write/issues",
-  "homepage": "https://github.com/huksley/prometheus-remote-write",
+  "bugs": "https://github.com/huksley/react-embed-calendly/issues",
+  "homepage": "https://github.com/huksley/react-embed-calendly",
   "exports": {
     ".": {
       "import": "./dist/index.mjs",
